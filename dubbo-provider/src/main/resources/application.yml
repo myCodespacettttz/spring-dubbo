@@ -1,0 +1,39 @@
+dubbo:
+  application:
+      name: dubbo-provider
+      logger: slf4j
+  protocol:
+    name: dubbo
+    port: 20880
+  registry:
+    address: nacos://${nacos.address:127.0.0.1}:8848?username=nacos&password=nacos
+  provider:
+    threads: 500
+    threadpool: fixed
+    queues: 200
+  tracing:
+    enabled: true # default is false
+    sampling:
+      probability: 0.5 # sampling rate, default is 0.1
+    propagation:
+      type: W3C # W3C/B3 default is W3C
+    tracing-exporter:
+      zipkin-config:
+        endpoint: http://127.0.0.1:9411/api/v2/spans
+        connect-timeout: 1s # connect timeout, default is 1s
+        read-timeout: 10s # read timeout, default is 10s
+spring:
+  datasource:
+    username: nacos
+    password: 123456
+    url: jdbc:mysql://localhost:3306/nacos?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      connection-timeout: 10000
+      maximum-pool-size: 20
+      minimum-idle: 5
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.entity
+  configuration:
+    map-underscore-to-camel-case: true
