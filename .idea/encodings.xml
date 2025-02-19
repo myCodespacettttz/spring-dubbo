@@ -8,8 +8,22 @@
     <file url="file://$PROJECT_DIR$/dubbo-consumer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-provider-back/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-provider-back/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-provider-seata-account/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-provider-seata-account/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-provider/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-provider/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-test/seata-test-account/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-test/seata-test-account/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-test/seata-test-business/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-test/seata-test-business/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-test/seata-test-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-test/seata-test-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-test/seata-test-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-test/seata-test-order/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-test/seata-test-stock/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-test/seata-test-stock/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-test/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

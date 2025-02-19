@@ -12,6 +12,13 @@
         <module>component</module>
         <module>dubbo-consumer</module>
         <module>dubbo-provider-back</module>
+        <module>seata-test</module>
+        <module>seata-test/seata-test-gateway</module>
+        <module>seata-test/seata-test-business</module>
+        <module>seata-test/seata-test-order</module>
+        <module>seata-test/seata-test-stock</module>
+        <module>seata-test/seata-test-account</module>
+        <module>seata-test/seata-test-component</module>
     </modules>
 
     <properties>

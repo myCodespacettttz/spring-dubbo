@@ -7,11 +7,13 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/datasource-demo/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo-provider-back/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-provider-seata-account/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/datasource-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-provider-seata-account/pom.xml" />
       </set>
     </option>
   </component>

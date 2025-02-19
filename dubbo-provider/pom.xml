@@ -12,12 +12,6 @@
     <artifactId>dubbo-provider</artifactId>
 
     <dependencies>
-        <!-- zipkin链路监控 -->
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-spring-boot-tracing-otel-zipkin-starter</artifactId>
-            <version>3.2.9</version>
-        </dependency>
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>component</artifactId>
