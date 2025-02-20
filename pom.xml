@@ -77,6 +77,7 @@
                         <compilerArg>-proc:none</compilerArg>
                     </compilerArgs>
                 </configuration>
+                <version>3.13.0</version>
             </plugin>
         </plugins>
         <pluginManagement>

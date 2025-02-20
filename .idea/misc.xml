@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/datasource-demo/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo-provider-back/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo-provider-seata-account/pom.xml" />
+        <option value="$PROJECT_DIR$/seata-test/seata-test-component/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

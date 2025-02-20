@@ -1,0 +1,16 @@
+server:
+  port: 8082
+dubbo:
+  application:
+      name: seata-gateway
+      logger: slf4j
+  protocol:
+    name: dubbo
+    port: 20901
+  consumer:
+    threads: 500
+    threadpool: cached
+  registry:
+    address: nacos://${nacos.address:127.0.0.1}:8848?username=nacos&password=nacos
+
+

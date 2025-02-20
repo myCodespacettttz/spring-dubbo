@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.OrderMapper">
+    <!-- parameterType 和 parameterMap的区别 二者都是用于指定sql传入的参数
+    parameterType主要是用于区分简单类型如int,string,long等
+    parameterMap则用于指定对象类型 -->
+</mapper>

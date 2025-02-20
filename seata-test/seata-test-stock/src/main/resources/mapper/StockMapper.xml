@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.StockMapper">
+    <!-- parameterType 和 parameterMap的区别 二者都是用于指定sql传入的参数
+    parameterType主要是用于区分简单类型如int,string,long等
+    parameterMap则用于指定对象类型 -->
+    <update id="updateStock" parameterMap="stockMap">
+        update stock_tbl
+        set count = count - #{count}
+        where commodity_code = #{commodityCode} and count >= #{count}
+    </update>
+    <parameterMap id="stockMap" type="entity.Stock">
+        <parameter property="id" javaType="Integer"></parameter>
+        <parameter property="commodityCode" javaType="String"></parameter>
+        <parameter property="count" javaType="Integer"></parameter>
+    </parameterMap>
+</mapper>
