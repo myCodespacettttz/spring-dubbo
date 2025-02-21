@@ -8,5 +8,5 @@ import org.apache.ibatis.annotations.Param;
 
 @Mapper
 public interface AccountMapper extends BaseMapper<Account> {
-    Integer updateAccount(@Param("account") Account account);
+    Integer updateAccount(Account account);
 }

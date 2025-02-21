@@ -6,18 +6,20 @@ import api.StockApi;
 import com.example.service.BuyService;
 import entity.Product;
 import org.apache.dubbo.config.annotation.DubboReference;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class BuyServiceImpl implements BuyService {
 
-    @DubboReference
+    @DubboReference(timeout = 500000)
     private AccountApi accountApi;
 
-    @DubboReference
+    @DubboReference(timeout = 500000)
     private OrderApi orderApi;
 
-    @DubboReference
+    @DubboReference(timeout = 500000)
     private StockApi setStock;
 
     @Override
@@ -28,9 +30,10 @@ public class BuyServiceImpl implements BuyService {
             Integer num = buyNumList.get(i);
             accountMoney += product.money * num;
         }
-        orderApi.createOrder(list, accountMoney, userId);
-        setStock.setStock(list, buyNumList);
-        accountApi.setUserMoney(accountMoney, userId);
-        return "success";
+        int orderLine = orderApi.createOrder(list, accountMoney, userId);
+        int stockLine = setStock.setStock(list, buyNumList);
+        int accountLine = accountApi.setUserMoney(accountMoney, userId);
+        if (orderLine == 1 && stockLine == list.size() && accountLine == 1) return "success";
+        return "error";
     }
 }

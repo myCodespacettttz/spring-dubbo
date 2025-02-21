@@ -6,7 +6,7 @@ dubbo:
       logger: slf4j
   protocol:
     name: dubbo
-    port: 20901
+    port: 20999
   consumer:
     threads: 500
     threadpool: cached

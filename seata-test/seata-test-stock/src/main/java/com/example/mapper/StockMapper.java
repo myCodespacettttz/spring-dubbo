@@ -6,5 +6,5 @@ import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
 public interface StockMapper extends BaseMapper<Stock> {
-    public Integer updateStock(Stock stock);
+    public int updateStock(Stock stock);
 }

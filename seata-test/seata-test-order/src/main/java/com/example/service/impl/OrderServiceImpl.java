@@ -16,7 +16,7 @@ public class OrderServiceImpl implements OrderApi {
     private OrderMapper orderMapper;
 
     @Override
-    public void createOrder(List<Product> list, Integer money, String userId) {
+    public int createOrder(List<Product> list, Integer money, String userId) {
         StringBuilder temp = new StringBuilder();
         for (int i = 0; i < list.size(); i++) {
             Product product = list.get(i);
@@ -24,6 +24,6 @@ public class OrderServiceImpl implements OrderApi {
                 temp.append(product.getProductName()).append(",");
             }
         }
-        orderMapper.insert(new Order(1, userId, temp.toString(), 1, money));
+        return orderMapper.insert(new Order(null, userId, temp.toString(), 1, money));
     }
 }

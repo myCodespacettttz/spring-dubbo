@@ -2,9 +2,11 @@ package entity;
 
 
 
+import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.io.Serializable;
 
-
+@TableName("account_tbl")
 public class Account implements Serializable {
     private static final long serialVersionUID = System.currentTimeMillis();
     public Integer id;
